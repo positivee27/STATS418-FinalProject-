@@ -5,12 +5,12 @@ import numpy as np
 from sklearn.linear_model import LinearRegression
 
 
-data = pd.read_csv("https://raw.githubusercontent.com/positivee27/stats418-Mtcars-Flask-Api/master/scripts/mtcars.csv")
+data = pd.read_csv('https://raw.githubusercontent.com/positivee27/stats418-Final-Project/master/scripts/Moviedata%201.csv', error_bad_lines=False)
 
-y = data['mpg']
-train1 = data.iloc[:,3:8]
+y = data['votes']
+train1 = data.iloc[:,1:3]
 
-col_imp = ["disp", "hp", "dart", "wt", "qsec"]
+col_imp = ["imdb", "metascore	"]
 
 regr = LinearRegression()
 regr.fit(train1, y)
