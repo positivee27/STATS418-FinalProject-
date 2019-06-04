@@ -10,6 +10,13 @@ The data is obtianed by webscraping HTML from IMDB Movie website, the total attr
 4. Modeling 
 5. Conclusion
 
+```
+give examples 
+```
+
+
+
+
 The data is obtained by the webscraping HTML from 
 
 
