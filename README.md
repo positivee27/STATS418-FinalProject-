@@ -3,6 +3,18 @@
 
 The data is obtianed by webscraping HTML from IMDB Movie website, the total attribute of the data is 
 
+# Table of Contents
+1. [Introduction](README.md#Introduction)
+2. [Deployment](README.md#Deployment)
+3. [Exploratory Data Analysis](README.md#exploratory-data-analysis)
+4. [Modeling](README.md#Modeling)
+5. [Conclusions](README.md#Conclusions)
+
+## Introduction
+In this project we attempt to model the price of apple's 2018 closing stock price and produce a short term forecast of a few days through ARIMA models. The data is collected by webscraping the data from yahoo finance https://finance.yahoo.com/quote/AAPL/history?p=AAPL by parsing through the HTML for the table. This webscraping process is handled by the script in web_scrap.py seperate from main.py where the modeling is done. Finally, the model is deployed as an Flask API hosted on Amazon Web Service (AWS). Please note, the model will forecast an inputted amount of days from 2018-12-14.
+
+## Deployment
+
 
 1. Introduction
 2. Deployment
