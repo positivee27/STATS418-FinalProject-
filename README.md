@@ -51,7 +51,7 @@ We note that the votes seem to be normally distributed but slightly right Skewed
 
 To make it more sysmetric, we apply the normal transformation 
 <p align="center">
-  <img src="./imgs/3.png" width="500" />
+  <img src="./plot/3.png" width="500" />
 </p>
 
 If you have any question, please email me at huilin.tang@ucla.edu
