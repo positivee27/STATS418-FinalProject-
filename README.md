@@ -1,8 +1,5 @@
 # STATS418-Final-Project
 
-
-The data is obtianed by webscraping HTML from IMDB Movie website, the total attribute of the data is 
-
 # Table of Contents
 1. [Introduction](README.md#Introduction)
 2. [Deployment](README.md#Deployment)
@@ -11,21 +8,15 @@ The data is obtianed by webscraping HTML from IMDB Movie website, the total attr
 5. [Conclusions](README.md#Conclusions)
 
 ## Introduction
+
+This project is intented to predict the number of votes for movie in IMBd. We wanted to find out the relationship between the number of votes and Metascore(scale from 0 - 100) and IMBd (scale from 0 -10) through linear regression model. The data is obtained by webscraping the movie data from IMBd website https://www.imdb.com/search/title?release_date=2018-01-01,2019-01-01&sort=num_votes,desc and parse the HTML into the nice table. You could find the script for parsing HTML in web_scrap.py, and you can find the modeling code in stats418_main.py. At the end, this model is delpoyed as an Flask API hosted on Amazon Web Service (AWS). 
+
 In this project we attempt to model the price of apple's 2018 closing stock price and produce a short term forecast of a few days through ARIMA models. The data is collected by webscraping the data from yahoo finance https://finance.yahoo.com/quote/AAPL/history?p=AAPL by parsing through the HTML for the table. This webscraping process is handled by the script in web_scrap.py seperate from main.py where the modeling is done. Finally, the model is deployed as an Flask API hosted on Amazon Web Service (AWS). Please note, the model will forecast an inputted amount of days from 2018-12-14.
 
+
+
+https://www.dataquest.io/blog/web-scraping-beautifulsoup/
 ## Deployment
-
-
-1. Introduction
-2. Deployment
-3. Exploratory Data Analysis 
-4. Modeling 
-5. Conclusion
-
-```
-give examples 
-```
-
 
 
 
