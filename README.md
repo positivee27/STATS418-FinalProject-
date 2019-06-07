@@ -47,9 +47,7 @@ The scatterplot of IMDb score
 ![](./plot/1.png)
 
 We note that the votes seem to be normally distributed but slightly right Skewed
-<p align="center">
-  <img src="./imgs/2.png" width="500" />
-</p>
+![](./plot/2.png)
 
 To make it more sysmetric, we apply the normal transformation 
 <p align="center">
