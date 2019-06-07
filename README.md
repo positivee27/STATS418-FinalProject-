@@ -44,10 +44,14 @@ First, we wanted to do some exploratory analysis of the data and
 
 
 The scatterplot of IMDb score
-![](./plot/1.png)
+<p align="center">
+  <img src="./plot/1.png" width="500" />
+</p>
 
 We note that the votes seem to be normally distributed but slightly right Skewed
-![](./plot/2.png)
+<p align="center">
+  <img src="./plot/2.png" width="500" />
+</p>
 
 To make it more sysmetric, we apply the normal transformation 
 <p align="center">
