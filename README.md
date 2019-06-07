@@ -46,14 +46,14 @@ First, we wanted to do some exploratory analysis of the data and
 The scatterplot of IMDb score
 ![](./plot/1.png)
 
-We note that the daily price change seems to be normally distributed
+We note that the votes seem to be normally distributed but slightly right Skewed
 <p align="center">
-  <img src="./imgs/normPrice.png" width="500" />
+  <img src="./imgs/2.png" width="500" />
 </p>
 
-Decomposition for seasonality and trend
+To make it more sysmetric, we apply the normal transformation 
 <p align="center">
-  <img src="./imgs/decomp.png" width="500" />
+  <img src="./imgs/3.png" width="500" />
 </p>
 
 If you have any question, please email me at huilin.tang@ucla.edu
