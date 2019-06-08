@@ -58,7 +58,14 @@ To make it more sysmetric, we apply the normal transformation
   <img src="./plot/3.png" width="500" />
 </p>
 
-Modeling the 
+## Modeling 
+Although the popularity of this movie is not neccessarily associated with overall rating, we tried to use the linear regression model using imdb and metascore to predict the number votes. Surprisingly, we get very interesting result that the mean squared error is 0.0010889836135416554, which is extremely small. The result indicates that the number of votes has linear relationship with imdb score and metascore. A possible explaination for this result could be that people prefer more popular movies than less popular movies. Therefore, the number of votes has linear relationship with imdb socre and metascore.
+
+The plot underneath is the `y_test` against `y_pred`
+<p align="center">
+  <img src="./plot/4.png" width="500" />
+</p>
+
 
 
 If you have any question, please email me at huilin.tang@ucla.edu
