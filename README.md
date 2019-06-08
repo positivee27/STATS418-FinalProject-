@@ -58,4 +58,7 @@ To make it more sysmetric, we apply the normal transformation
   <img src="./plot/3.png" width="500" />
 </p>
 
+Modeling the 
+
+
 If you have any question, please email me at huilin.tang@ucla.edu
