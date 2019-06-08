@@ -9,7 +9,7 @@
 
 ## Introduction
 
-This project is intented to predict the number of votes for movie in IMBd. We wanted to find out the relationship between the number of votes and Metascore(scale from 0 - 100) and IMBd (scale from 0 -10) through linear regression model. The data is obtained by webscraping the movie data from IMBd website https://www.imdb.com/search/title?release_date=2018-01-01,2019-01-01&sort=num_votes,desc and parse the HTML into the nice table. You could find the script for parsing HTML in web_scrap.py, and you can find the modeling code in stats418_main.py. At the end, this model is delpoyed as an Flask API hosted on Amazon Web Service (AWS). 
+This project is intented to predict the number of votes for movie in IMBd using the 2018 movie's information from IMBd. We wanted to find out the relationship between the number of votes and Metascore(scale from 0 - 100) and IMBd (scale from 0 -10) through linear regression model. The data is obtained by webscraping the movie data from IMBd website https://www.imdb.com/search/title?release_date=2018-01-01,2019-01-01&sort=num_votes,desc and parse the HTML into the nice table. You could find the script for parsing HTML in web_scrap.py, and you can find the modeling code in stats418_main.py. At the end, this model is delpoyed as an Flask API hosted on Amazon Web Service (AWS). 
 
 https://www.dataquest.io/blog/web-scraping-beautifulsoup/
 ## Deployment
@@ -34,38 +34,35 @@ This should return
   "predicted votes":52869.3919191900185
 }`
 
-Note: You may try different input value to check the predicted votes number.
+Note: You may try different input value to check the predicted number of votes .
 **4. To stop this server, press `ctrl-C`. Furthermore, if you need to check any runing docker containers, you should enter `docker container ls` and stop them through `docker container kill <container-name>`**
 
 
 ## Exploratory Data Analysis
-To begin, we do some exploratory analysis of the data and check the assumptions requirements for an ARIMA model.
-First, we wanted to do some exploratory analysis of the data and 
-
+First, we wanted to do some exploratory analysis of the data
 
 The scatterplot of IMDb score
 <p align="center">
   <img src="./plot/1.png" width="500" />
 </p>
 
-We note that the votes seem to be normally distributed but slightly right Skewed
+We note that the number of votes seem to be normally distributed but slightly right skewed
 <p align="center">
   <img src="./plot/2.png" width="500" />
 </p>
 
-To make it more sysmetric, we apply the normal transformation 
+To make it more symmetrical, we apply the normal transformation to the number of votes 
 <p align="center">
   <img src="./plot/3.png" width="500" />
 </p>
 
 ## Modeling 
-Although the popularity of this movie is not neccessarily associated with overall rating, we tried to use the linear regression model using imdb and metascore to predict the number votes. Surprisingly, we get very interesting result that the mean squared error is 0.0010889836135416554, which is extremely small. The result indicates that the number of votes has linear relationship with imdb score and metascore. A possible explaination for this result could be that people prefer more popular movies than less popular movies. Therefore, the number of votes has linear relationship with imdb socre and metascore.
+Although the popularity of this movie is not neccessarily associated with the rating, we tried to use the linear regression model using imdb and metascore to predict the number votes. Surprisingly, we get very interesting result that the mean squared error is 0.0010889836135416554, which is extremely small. The result indicates that the number of votes has linear relationship with imdb score and metascore. A possible explaination for this result could be that people still prefer more popular movies than less popular movies. Therefore, the number of votes has linear relationship with imdb socre and metascore.
 
 The plot underneath is the `y_test` against `y_pred`
 <p align="center">
   <img src="./plot/4.png" width="500" />
 </p>
 
-
-
-If you have any question, please email me at huilin.tang@ucla.edu
+## Conclusions
+The model is surprisingly a good fit for this dataset. The consideration for further development could be include more variables to explore other possible features that associated with the the number of votes. In that case, we might use different model instead of linear regression model such as `X_Gboost` or `K_nearst neighbors algorithm`.
